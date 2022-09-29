@@ -3,8 +3,6 @@ import axios from 'axios'
 import AppHeader from '../appHeader/AppHeader'
 import CurrencyInput from '../currencyInput/CurrencyInput'
 
-import './app.scss';
-
 const BASE_URL = 'https://v6.exchangerate-api.com/v6/'
 const API_KEY = '5f44ec738d0cfec239fe8850'
 
