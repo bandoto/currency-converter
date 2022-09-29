@@ -1,0 +1,22 @@
+.header {
+    padding: 15px 0;
+
+    border-bottom: 1px solid #000;
+    
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 10px;
+            font-size: 14px;
+        }
+    }
+
+    &__rate {
+        display: flex;
+        gap: 40px;
+    }
+}

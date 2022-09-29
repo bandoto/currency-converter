@@ -1,0 +1,45 @@
+.converter {
+    height: calc(100vh - 63px);
+    display: flex;
+    align-items: center;
+
+    &__body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 36px;
+        gap: 20px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    &__input {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 300px;
+        input {
+            width: 100%;
+            padding: 15px 10px;
+            border: 1px solid #000;
+            border-right: none;
+            height: 48px;
+            outline: none;
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+        select {
+            padding: 15px 20px;
+            border-color: #000;
+            outline: none;
+            height: 48px;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+        }
+    }
+}
